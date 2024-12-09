@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Motors</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" aria-label="Inicio de Luxe Motors">
+            <picture>
+              <img src="../IMG/logo.avif" alt="Logo de Luxe Motors" height="40" />
+            </picture>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <h1 class="text-center">Deja tu Opinión sobre el Auto</h1>
+
+      <!-- Formulario -->
+      <form id="opinion">
+        <!-- Campo de Nombre -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input 
+            type="text" 
+            id="nombre" 
+            class="form-control"
+            placeholder="Ingrese su nombre completo"
+            required 
+          />
+        </div>
+
+        <!-- Selección de Marca -->
+        <div class="mb-3">
+          <label class="form-label">Marca del Vehículo</label>
+          <div>
+            <input type="radio" name="marca" id="marcaAudi" value="Audi" required>
+            <label for="marcaAudi">Audi</label>
+          </div>
+          <div>
+            <input type="radio" name="marca" id="marcaFord" value="Ford">
+            <label for="marcaFord">Ford</label>
+          </div>
+          <div>
+            <input type="radio" name="marca" id="marcaMercedes" value="Mercedes">
+            <label for="marcaMercedes">Mercedes</label>
+          </div>
+          <div>
+            <input type="radio" name="marca" id="marcaBrabus" value="Brabus">
+            <label for="marcaBrabus">Brabus</label>
+          </div>
+          <div>
+            <input type="radio" name="marca" id="marcaPorsche" value="Porsche">
+            <label for="marcaPorsche">Porsche</label>
+          </div>
+        </div>
+
+        <!-- Campo de Comentario -->
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <textarea 
+            id="comentario" 
+            class="form-control" 
+            rows="3" 
+            placeholder="Escribe tu opinión sobre el vehículo..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit" class="btn btn-primary">Enviar Opinión</button>
+      </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-light py-3 text-center">
+      <p class="mb-0">Luxe Motors - Página Informativa</p>
+    </footer>
+
+    <div id="google"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es', // Idioma base
+                includedLanguages: 'es,en,fr,de', // Idiomas disponibles
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google');
+        }
+    </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/js.js"></script>
+  </body>
+</html>
